@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar clases Java",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-cp",
+                "${workspaceFolder}/WEB-INF/lib/javax.servlet-api-4.0.1.jar",
+                "-d",
+                "${workspaceFolder}/WEB-INF/classes",
+                "${workspaceFolder}/WEB-INF/classes/com/barneyo/inmobiliaria/config/*.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$javac"]
+        }
+    ]
+}
