@@ -11,7 +11,7 @@ COPY ./WEB-INF/lib/*.jar /usr/local/tomcat/lib/
 
 # Render asigna el puerto en la variable de entorno $PORT
 # En lugar de modificar server.xml, usamos CATALINA_OPTS
-ENV CATALINA_OPTS="-Dserver.port=${PORT:8080}"
+ENV CATALINA_OPTS="-Dserver.port=${PORT}"
 
 # Exponer el puerto por defecto (Render lo ignora, pero es buena práctica)
 EXPOSE 8080
